@@ -18,4 +18,8 @@ Gem::Specification.new do |gem|
   gem.files << "man/foreman.1"
 
   gem.add_dependency 'thor', '~> 0.19.1'
+
+  #Fix https://github.com/ddollar/foreman/issues/561
+  gem.add_dependency 'dotenv' # very loose dependency
+
 end
